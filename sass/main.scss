@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff;
+
+  box-sizing: border-box;
+}
+
+.header {
+  color: rgb(67, 40, 58);
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(67, 40, 58, 0.8),
+      rgba(67, 40, 58, 0.8)
+    ),
+    url("../img/Mask-Group-1@2x.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.content {
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
