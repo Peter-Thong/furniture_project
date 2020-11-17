@@ -29,17 +29,107 @@ body {
       rgba(67, 40, 58, 0.8),
       rgba(67, 40, 58, 0.8)
     ),
-    url("../img/Mask-Group-1@2x.png");
+    url("../img/hero-img@2x.png");
   background-size: cover;
   background-position: top;
 }
 
-.content {
-  height: 200px;
-  width: 400px;
+.header__text-box {
   position: absolute;
-  background-color: white;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  color: white;
+  backface-visibility: hidden;
+  font-size: 5.6rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+.paragraph {
+  color: white;
+  width: 40rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  font-family: inherit;
+  height: 4.4rem;
+  width: 16.3rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+
+  &--white {
+    color: rgb(67, 40, 58);
+    background-color: white;
+  }
+}
+
+.navigation {
+  display: flex;
+  height: 9%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 28rem;
+}
+
+.navigation__link {
+  color: white;
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__bar {
+  color: white;
+  font-size: 4.5rem;
+}
+
+.navigation__item {
+  display: inline-block;
+}
+.navigation__icons {
+  background-size: cover;
+  background-position: center;
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-right: 4rem;
+  display: block;
+  &-search {
+    background: url("../img/icon-search.svg");
+    height: 2rem;
+    width: 2rem;
+    margin-left: 2rem;
+  }
+
+  &-person {
+    background: url("../img/icon-person.svg");
+    background-repeat: no-repeat;
+  }
+
+  &-heart {
+    background: url("../img/icon-wishlist.svg");
+  }
+  &-cart {
+    background: url("../img/icon-shopping-cart.svg");
+  }
 }
