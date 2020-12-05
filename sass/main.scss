@@ -1,135 +1,99 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "abstracts/variables";
 
-html {
-  font-size: 62.5%;
-}
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-// font-family: 'Lato', sans-serif;
-// font-family: 'Playfair Display', serif;
+@import "components/button";
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #fff;
+@import "layout/header";
+@import "layout/navigation";
 
-  box-sizing: border-box;
-}
-
-.header {
-  color: rgb(67, 40, 58);
+.section-new__top {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(67, 40, 58, 0.8),
-      rgba(67, 40, 58, 0.8)
-    ),
-    url("../img/hero-img@2x.png");
-  background-size: cover;
-  background-position: top;
+    to bottom,
+    rgba($color-primary-dark, 1),
+    rgba($color-primary, 1)
+  );
 }
 
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.section-new__bottom {
+  height: 100vh;
+  background: linear-gradient(248deg, #846397 0%, #43283a 100%) 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
 }
 
-.heading-primary {
+.heading-secondary {
   font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  color: white;
-  backface-visibility: hidden;
-  font-size: 5.6rem;
+  color: $color-white;
+  font-size: 4.8rem;
   font-weight: 400;
-  margin-bottom: 1.6rem;
+  padding-top: 4.2rem;
 }
 
-.paragraph {
-  color: white;
-  width: 40rem;
-  display: inline-block;
-  font-size: 1.6rem;
-  margin-bottom: 5rem;
-}
-
-.btn {
-  font-family: inherit;
-  height: 4.4rem;
-  width: 16.3rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-
-  &--white {
-    color: rgb(67, 40, 58);
-    background-color: white;
-  }
-}
-
-.navigation {
-  display: flex;
-  height: 9%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 28rem;
-}
-
-.navigation__link {
-  color: white;
-  font-weight: bold;
-  font-family: inherit;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.6rem;
-  margin-right: 2rem;
-}
-
-.navigation__list {
+.section-new__top-content {
+  width: 114rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
 
-.navigation__bar {
-  color: white;
-  font-size: 4.5rem;
+.section-new__shape {
+  height: 63rem;
+  width: 45rem;
+  border-radius: 32rem / 45rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: -3rem 2rem 2rem rgba($color-shadow, 0.9);
+  margin-right: 30rem;
 }
 
-.navigation__item {
-  display: inline-block;
+.section-new__img {
+  height: 100%;
 }
-.navigation__icons {
-  background-size: cover;
-  background-position: center;
-  height: 2.2rem;
-  width: 2.2rem;
-  margin-right: 4rem;
-  display: block;
-  &-search {
-    background: url("../img/icon-search.svg");
-    height: 2rem;
-    width: 2rem;
-    margin-left: 2rem;
-  }
 
-  &-person {
-    background: url("../img/icon-person.svg");
-    background-repeat: no-repeat;
-  }
+.section-new__top-detail {
+  display: flex;
+  flex-direction: column;
+}
 
-  &-heart {
-    background: url("../img/icon-wishlist.svg");
-  }
-  &-cart {
-    background: url("../img/icon-shopping-cart.svg");
-  }
+.heading-tertiary {
+  font-family: "Playfair Display", serif;
+  color: $color-white;
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+
+.heading-quaternary {
+  font-family: "Playfair Display", serif;
+  color: $color-white;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2.8rem;
+}
+
+.small-text {
+  font-family: "Playfair Display", serif;
+  color: $color-white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2.3rem;
+}
+
+.small-width {
+  width: 24.5rem;
+}
+.section-new__call-action {
+  display: flex;
+  align-items: center;
+}
+.icon--heart {
+  background: url("../img/icon-heart.svg");
+  height: 4.5rem;
+  width: 4.65rem;
+  background-repeat: no-repeat;
+  margin: 0px 4.5rem;
 }

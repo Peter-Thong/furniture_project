@@ -1,0 +1,15 @@
+.btn {
+  font-family: inherit;
+  height: 4.4rem;
+  width: 16.3rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+
+  &--white {
+    color: $color-primary;
+    background-color: $color-white;
+  }
+}

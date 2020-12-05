@@ -1,0 +1,59 @@
+.navigation {
+  display: flex;
+  height: 9%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 28rem;
+
+  &__link {
+    color: $color-white;
+    font-weight: bold;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bar {
+    color: $color-white;
+    font-size: 4.5rem;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+  &__icons {
+    background-size: cover;
+    background-position: center;
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 4rem;
+    display: block;
+
+    &-search {
+      background: url("../img/icon-search.svg");
+      height: 2rem;
+      width: 2rem;
+      margin-left: 2rem;
+    }
+
+    &-person {
+      background: url("../img/icon-person.svg");
+      background-repeat: no-repeat;
+    }
+
+    &-heart {
+      background: url("../img/icon-wishlist.svg");
+    }
+
+    &-cart {
+      background: url("../img/icon-shopping-cart.svg");
+    }
+  }
+}
