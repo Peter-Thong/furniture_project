@@ -31,8 +31,13 @@ body {
   width: 40rem;
   display: inline-block;
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 2.4rem; }
+
+.space-bottom-small {
   margin-bottom: 5rem; }
+
+.space-bottom-little {
+  margin-bottom: 2rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -49,6 +54,9 @@ body {
   .btn--white {
     color: #43283a;
     background-color: #fff; }
+  .btn--dark {
+    color: #fff;
+    background-color: #43283a; }
 
 .header {
   color: #43283a;
@@ -190,7 +198,9 @@ body {
   font-family: "Playfair Display", serif;
   color: #fff;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 400; }
+
+.space-bottom {
   margin-bottom: 2.3rem; }
 
 .small-width {
@@ -272,5 +282,89 @@ body {
 .link-text {
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.6rem; }
+
+.link-upper {
   text-transform: uppercase; }
+
+.section-sales {
+  width: 100vw;
+  height: 100vh; }
+  .section-sales__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-sales__items {
+    display: flex;
+    padding: 10rem 40rem 5rem 40rem;
+    align-items: center;
+    justify-content: space-between; }
+    .section-sales__items-1 {
+      position: relative; }
+    .section-sales__items-2 {
+      position: relative; }
+    .section-sales__items-3 {
+      position: relative; }
+  .section-sales__icons {
+    height: 0.8rem;
+    width: 3rem;
+    display: block;
+    margin-top: 0.3rem;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem; }
+    .section-sales__icons-arrow {
+      background: url("../img/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+
+.horizontal-align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.text-center {
+  text-align: center; }
+
+.section-sales__shape {
+  position: relative;
+  overflow: hidden;
+  height: 45rem;
+  width: 37rem;
+  border-radius: 37rem / 45rem;
+  margin-bottom: 3rem; }
+
+.trim-space {
+  display: inline-block; }
+
+.small-arrow {
+  height: 0.8rem;
+  width: 2rem; }
+
+.link-text__sales {
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: bold; }
+
+.circle-icon {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  height: 5rem;
+  width: 5rem;
+  background-color: rgba(67, 40, 58, 0.8);
+  border-radius: 50%;
+  z-index: 100; }
+
+.icon__sales--heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background: url("../img/icon-heart.svg");
+  z-index: 150;
+  height: 3rem;
+  width: 3.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }

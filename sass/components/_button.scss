@@ -12,4 +12,9 @@
     color: $color-primary;
     background-color: $color-white;
   }
+
+  &--dark {
+    color: $color-white;
+    background-color: $color-primary;
+  }
 }
