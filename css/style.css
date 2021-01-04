@@ -97,6 +97,8 @@ body {
       height: 2rem;
       width: 2rem;
       margin-left: 2rem; }
+    .navigation__icons-pin {
+      background: url("../../img/pin-icon.svg"); }
     .navigation__icons-person {
       background: url("../img/icon-person.svg");
       background-repeat: no-repeat; }
@@ -104,6 +106,10 @@ body {
       background: url("../img/icon-wishlist.svg"); }
     .navigation__icons-cart {
       background: url("../img/icon-shopping-cart.svg"); }
+
+.section-new {
+  width: 100vw;
+  height: 181vh; }
 
 .section-new__top {
   position: relative;
@@ -138,6 +144,7 @@ body {
   width: 130rem;
   margin: 0 auto;
   padding-top: 30rem;
+  padding-left: 10rem;
   display: flex;
   align-items: center; }
 
@@ -155,7 +162,7 @@ body {
     width: 63rem;
     border-radius: 45rem / 32rem;
     box-shadow: -2rem 3rem 2rem rgba(55, 34, 48, 0.6);
-    margin-left: 30rem; }
+    margin-left: 20rem; }
 
 .section-new__img {
   height: 100%; }
@@ -210,3 +217,60 @@ body {
 
 .section-new__svg {
   position: relative; }
+
+.section-gallery {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(67, 40, 58, 0.7);
+  display: grid;
+  grid-template-columns: 1fr 1.55fr 1fr;
+  grid-template-rows: 1fr 0.8fr 1fr;
+  gap: 3rem; }
+  .section-gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .section-gallery__image--1 {
+    background-color: white;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2; }
+  .section-gallery__image--2 {
+    background-color: white;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3; }
+  .section-gallery__image--3 {
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4; }
+  .section-gallery__image--4 {
+    background-color: white;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4; }
+  .section-gallery__icons {
+    height: 3.3rem;
+    width: 3.3rem;
+    display: block;
+    margin-top: 2rem; }
+    .section-gallery__icons-pin {
+      background: url("../img/pin-icon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+
+.section-gallery__link {
+  background-color: white;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.dark-color {
+  color: #43283a; }
+
+.link-text {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
