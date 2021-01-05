@@ -1,0 +1,10 @@
+#curve {
+  width: 100%;
+  margin-top: 12rem;
+  z-index: -1;
+
+  & path {
+    fill: "url(#linear)";
+    z-index: -1;
+  }
+}

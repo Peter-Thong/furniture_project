@@ -1,0 +1,62 @@
+.section-gallery {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color-primary, 0.7);
+  display: grid;
+  grid-template-columns: 1fr 1.55fr 1fr;
+  grid-template-rows: 1fr 0.8fr 1fr;
+  gap: 3rem;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__image--1 {
+    background-color: white;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &__image--2 {
+    background-color: white;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
+  &__image--3 {
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+
+  &__image--4 {
+    background-color: white;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+
+  &__icons {
+    height: 3.3rem;
+    width: 3.3rem;
+    display: block;
+    margin-top: 2rem;
+
+    &-pin {
+      background: url("../img/pin-icon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &__link {
+    background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,3 +1,27 @@
 .u-center-text {
   text-align: center !important;
 }
+
+.dark-color {
+  color: $color-primary;
+}
+
+.space-bottom {
+  margin-bottom: 2.3rem;
+}
+.small-width {
+  width: 24.5rem;
+}
+
+.space-bottom-small {
+  margin-bottom: 5rem;
+}
+.space-bottom-little {
+  margin-bottom: 2rem;
+}
+
+.horizontal-align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

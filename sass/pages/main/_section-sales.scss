@@ -1,0 +1,42 @@
+.section-sales {
+  width: 100vw;
+  height: 100vh;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__items {
+    display: flex;
+    padding: 10rem 40rem 5rem 40rem;
+    align-items: center;
+    justify-content: space-between;
+    &-1 {
+      position: relative;
+    }
+    &-2 {
+      position: relative;
+    }
+    &-3 {
+      position: relative;
+    }
+  }
+
+  &__icons {
+    height: 0.8rem;
+    width: 2rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem;
+
+    &-arrow {
+      background: url("../img/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

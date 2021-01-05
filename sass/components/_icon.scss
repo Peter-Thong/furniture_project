@@ -1,0 +1,31 @@
+.circle-icon {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  height: 5rem;
+  width: 5rem;
+  background-color: rgba($color-primary, 0.8);
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.icon__sales--heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background: url("../img/icon-heart.svg");
+  z-index: 150;
+  height: 3rem;
+  width: 3.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.icon--heart {
+  background: url("../img/icon-heart.svg");
+  height: 4.5rem;
+  width: 4.65rem;
+  background-repeat: no-repeat;
+  margin: 0px 4.5rem;
+}
