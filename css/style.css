@@ -51,6 +51,8 @@ body {
   font-weight: bold;
   border: none;
   border-radius: 5px; }
+  .btn:focus {
+    outline: none; }
   .btn--white {
     color: #43283a;
     background-color: #fff; }
@@ -193,6 +195,11 @@ body {
   font-size: 2.4rem;
   font-weight: 400;
   margin-bottom: 2.8rem; }
+
+.lato-font {
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+  margin-bottom: 1rem; }
 
 .small-text {
   font-family: "Playfair Display", serif;
@@ -368,3 +375,88 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+.footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: #43283a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 2rem 28rem; }
+  .footer__link {
+    display: flex;
+    width: 30%; }
+  .footer__list {
+    list-style-type: none;
+    margin-left: 8rem; }
+  .footer__information {
+    width: 30%; }
+  .footer li {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center; }
+  .footer__input {
+    width: 20rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 1.5rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.6rem; }
+    .footer__input::placeholder {
+      color: #fff;
+      font-family: inherit;
+      font-size: 1.6rem; }
+    .footer__input:focus {
+      outline: none; }
+  .footer__btn {
+    height: 5rem;
+    width: 7rem;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    margin-left: -5px;
+    color: #43283a;
+    font-size: 1.6rem; }
+    .footer__btn:focus {
+      outline: none; }
+  .footer__logo {
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .footer__logo--email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10rem; }
+  .footer__icons {
+    display: inline-block;
+    margin-right: 2rem; }
+    .footer__icons--face {
+      height: 2.4rem;
+      width: 1.2rem;
+      background: url("../img/facebook-icon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-right: 2.8rem; }
+    .footer__icons--twit {
+      height: 1.8rem;
+      width: 2rem;
+      background: url("../img/twitter-icon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .footer__icons--insta {
+      height: 2rem;
+      width: 2rem;
+      background: url("../img/insta-icon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }

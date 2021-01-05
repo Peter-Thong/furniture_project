@@ -7,6 +7,9 @@
   font-weight: bold;
   border: none;
   border-radius: 5px;
+  &:focus {
+    outline: none;
+  }
 
   &--white {
     color: $color-primary;
