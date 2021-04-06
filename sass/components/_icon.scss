@@ -29,3 +29,45 @@
   background-repeat: no-repeat;
   margin: 0px 4.5rem;
 }
+
+.icon--scroll,
+.icon--scroll::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon--scroll {
+  width: 4rem;
+  height: 7rem;
+  border: 0.3rem solid $color-white;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  bottom: 3rem;
+}
+
+.icon--scroll::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  background: $color-white;
+  margin-left: -0.33rem;
+  top: 1.5rem;
+  border-radius: 50%;
+  animation: 1.5s scroll cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(3rem) scale(0.5);
+  }
+}
