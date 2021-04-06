@@ -37,6 +37,11 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      &--down {
+        transform: rotate(90deg);
+        margin-bottom: 0.3rem;
+        margin-left: -0.1rem;
+      }
     }
   }
 }

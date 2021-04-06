@@ -9,6 +9,9 @@
 .space-bottom {
   margin-bottom: 2.3rem;
 }
+.space-bottom-medium {
+  margin-bottom: 1.8rem;
+}
 .small-width {
   width: 24.5rem;
 }
@@ -24,4 +27,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.container {
+  margin-left: 13rem;
+  margin-bottom: 10rem;
 }
