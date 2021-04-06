@@ -172,7 +172,6 @@ body {
 .header {
   color: #43283a;
   height: 100vh;
-  background-image: linear-gradient(rgba(67, 40, 58, 0.8), rgba(67, 40, 58, 0.8)), url("../img/hero-img@2x.png");
   background-size: cover;
   background-position: top; }
   .header__text-box {
@@ -181,6 +180,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  .header--main {
+    background-image: linear-gradient(rgba(67, 40, 58, 0.8), rgba(67, 40, 58, 0.8)), url("../img/hero-img@2x.png"); }
+  .header--living {
+    background-color: #43283a; }
 
 .navigation {
   display: flex;
