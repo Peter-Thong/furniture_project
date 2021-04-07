@@ -1,0 +1,49 @@
+.section-category {
+  width: 100vw;
+  height: auto;
+  background-color: $color-white;
+
+  &__items {
+    display: flex;
+    padding: 10rem 40rem 5rem 40rem;
+    align-items: center;
+    justify-content: space-between;
+    &-1 {
+      position: relative;
+    }
+    &-2 {
+      position: relative;
+    }
+    &-3 {
+      position: relative;
+    }
+    &--shape {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45rem;
+      width: 37rem;
+      background-color: $color-primary;
+      border-radius: 37rem / 45rem;
+      box-shadow: 2rem 1rem 2rem rgba($color-shadow, 0.6);
+    }
+    &--img {
+      width: 95%;
+
+      &-light {
+        width: 70%;
+        margin-left: 10rem;
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+    margin-top: 2rem;
+    & p {
+      font-size: 2.8rem;
+    }
+  }
+}
