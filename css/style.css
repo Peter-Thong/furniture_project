@@ -88,6 +88,9 @@ body {
 .dark-color {
   color: #43283a; }
 
+.white-color {
+  color: #fff; }
+
 .space-bottom {
   margin-bottom: 2.3rem; }
 
@@ -442,6 +445,11 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; }
+      .section-gallery__icons-pin--white {
+        background: url("../img/pin-icon--white.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
   .section-gallery__link {
     background-color: white;
     grid-column: 2 / 3;
@@ -542,3 +550,21 @@ body {
     margin-top: 2rem; }
     .section-category__content p {
       font-size: 2.8rem; }
+
+.section-gallery--living {
+  width: 100vw;
+  height: auto;
+  background-color: rgba(67, 40, 58, 0.9); }
+  .section-gallery--living__image {
+    padding: 8rem 28rem;
+    display: flex;
+    justify-content: center; }
+  .section-gallery--living__img {
+    width: 42.8rem;
+    margin: 2.6rem 2.6rem; }
+  .section-gallery--living__link {
+    margin: 2.6rem 2.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
