@@ -46,6 +46,14 @@
   bottom: 3rem;
 }
 
+.icon--scroll-move-up {
+  bottom: 15rem;
+}
+
+.icon--scroll-dark {
+  border: 0.3rem solid $color-primary;
+}
+
 .icon--scroll::before {
   content: "";
   width: 0.8rem;

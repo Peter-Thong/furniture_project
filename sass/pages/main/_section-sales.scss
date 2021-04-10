@@ -37,6 +37,9 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      &--white {
+        fill: $color-white;
+      }
       &--down {
         transform: rotate(90deg);
         margin-bottom: 0.3rem;

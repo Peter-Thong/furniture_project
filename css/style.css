@@ -177,6 +177,12 @@ body {
   cursor: pointer;
   bottom: 3rem; }
 
+.icon--scroll-move-up {
+  bottom: 15rem; }
+
+.icon--scroll-dark {
+  border: 0.3rem solid #43283a; }
+
 .icon--scroll::before {
   content: "";
   width: 0.8rem;
@@ -238,10 +244,27 @@ body {
       background-position: top;
       border-radius: 10px;
       box-shadow: 3rem 3rem 5rem rgba(0, 0, 0, 0.6); }
+    .header__text-box--product {
+      display: flex;
+      align-items: center;
+      top: 50%;
+      left: 49%;
+      height: 70vh;
+      width: 70vw; }
   .header--main {
     background-image: linear-gradient(rgba(67, 40, 58, 0.8), rgba(67, 40, 58, 0.8)), url("../img/hero-img@2x.png"); }
   .header--living {
     background-color: #43283a; }
+  .header--product {
+    background-color: #43283a;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+    .header--product__img {
+      position: absolute;
+      top: 20%;
+      left: 40%; }
+      .header--product__img--sofa {
+        height: 50vh;
+        width: auto; }
 
 .navigation {
   display: flex;
@@ -402,6 +425,8 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; }
+      .section-sales__icons-arrow--white {
+        fill: #fff; }
       .section-sales__icons-arrow--down {
         transform: rotate(90deg);
         margin-bottom: 0.3rem;

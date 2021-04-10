@@ -33,6 +33,16 @@
       border-radius: 10px;
       box-shadow: 3rem 3rem 5rem rgba($color: #000000, $alpha: 0.6);
     }
+
+    &--product {
+      display: flex;
+      align-items: center;
+
+      top: 50%;
+      left: 49%;
+      height: 70vh;
+      width: 70vw;
+    }
   }
 
   &--main {
@@ -45,5 +55,21 @@
 
   &--living {
     background-color: $color-primary;
+  }
+
+  &--product {
+    background-color: $color-primary;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__img {
+      position: absolute;
+      top: 20%;
+      left: 40%;
+
+      &--sofa {
+        height: 50vh;
+        width: auto;
+      }
+    }
   }
 }
