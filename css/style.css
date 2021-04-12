@@ -593,3 +593,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+
+.section-product {
+  width: 100vw;
+  height: 100vh; }
