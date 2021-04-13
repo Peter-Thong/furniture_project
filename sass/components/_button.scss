@@ -7,10 +7,20 @@
   font-weight: bold;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   &:focus {
     outline: none;
   }
 
+  &--sorting {
+    height: 3rem;
+    width: 6rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: 2.5px solid $color-primary;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
   &--white {
     color: $color-primary;
     background-color: $color-white;

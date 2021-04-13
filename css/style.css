@@ -106,6 +106,9 @@ body {
 .space-bottom-little {
   margin-bottom: 2rem; }
 
+.space-bottom-tiny {
+  margin-bottom: 0.4rem; }
+
 .horizontal-align {
   display: flex;
   align-items: center;
@@ -123,9 +126,18 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
   .btn:focus {
     outline: none; }
+  .btn--sorting {
+    height: 3rem;
+    width: 6rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: 2.5px solid #43283a;
+    border-radius: 2rem;
+    cursor: pointer; }
   .btn--white {
     color: #43283a;
     background-color: #fff; }
@@ -135,26 +147,52 @@ body {
 
 .circle-icon {
   position: absolute;
-  top: 2rem;
-  right: 4rem;
   height: 5rem;
   width: 5rem;
   background-color: rgba(67, 40, 58, 0.8);
   border-radius: 50%;
-  z-index: 100; }
+  z-index: 100;
+  cursor: pointer; }
+  .circle-icon--heart {
+    top: 2rem;
+    right: 4rem; }
+  .circle-icon--cart {
+    top: 8rem;
+    right: 0rem; }
 
-.icon__sales--heart {
+.star-icon {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block; }
+  .star-icon--dark {
+    background: url("../../img/product/star_rate-24px.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .star-icon--white {
+    background: url("../../img/product/star_rate-24px-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+.icon__sales {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -45%);
-  background: url("../img/icon-heart.svg");
   z-index: 150;
   height: 3rem;
-  width: 3.3rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  width: 3.3rem; }
+  .icon__sales--heart {
+    background: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .icon__sales--cart {
+    background: url("../../img/product/icon-shopping-cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
 
 .icon--heart {
   background: url("../img/icon-heart.svg");
@@ -596,4 +634,39 @@ body {
 
 .section-product {
   width: 100vw;
-  height: 100vh; }
+  height: auto; }
+  .section-product__sort {
+    width: 20vw;
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .section-product__colors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  .section-product__color {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 0.4rem;
+    cursor: pointer; }
+    .section-product__color--1 {
+      background-color: #a9c9ff; }
+      .section-product__color--1::before {
+        position: absolute;
+        content: "";
+        width: 2.8rem;
+        height: 2.8rem;
+        background-color: transparent;
+        border: 1px solid #43283a;
+        border-radius: 50%;
+        transform: translate(-3.5px, -3.4px); }
+    .section-product__color--2 {
+      background-color: #ffc6ff; }
+    .section-product__color--3 {
+      background-color: #b9a4e6; }
+    .section-product__color--4 {
+      background-color: #43283a; }

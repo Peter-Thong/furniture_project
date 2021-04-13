@@ -1,27 +1,66 @@
 .circle-icon {
   position: absolute;
-  top: 2rem;
-  right: 4rem;
   height: 5rem;
   width: 5rem;
   background-color: rgba($color-primary, 0.8);
   border-radius: 50%;
   z-index: 100;
+  cursor: pointer;
+
+  &--heart {
+    top: 2rem;
+    right: 4rem;
+  }
+
+  &--cart {
+    top: 8rem;
+    right: 0rem;
+  }
 }
 
-.icon__sales--heart {
+.star-icon {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  &--dark {
+    background: url("../../img/product/star_rate-24px.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--white {
+    background: url("../../img/product/star_rate-24px-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.icon__sales {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -45%);
-  background: url("../img/icon-heart.svg");
   z-index: 150;
   height: 3rem;
   width: 3.3rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
+  &--heart {
+    background: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--cart {
+    background: url("../../img/product/icon-shopping-cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
+
 .icon--heart {
   background: url("../img/icon-heart.svg");
   height: 4.5rem;
