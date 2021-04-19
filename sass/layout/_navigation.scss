@@ -6,6 +6,9 @@
   padding: 1rem 28rem;
 
   &__link {
+    &--dark {
+      color: $color-primary;
+    }
     color: $color-white;
     font-weight: bold;
     font-family: inherit;
@@ -21,6 +24,9 @@
   }
 
   &__bar {
+    &--dark {
+      color: $color-primary;
+    }
     color: $color-white;
     font-size: 4.5rem;
   }
@@ -38,6 +44,9 @@
 
     &-search {
       background: url("../img/icon-search.svg");
+      &--dark {
+        background: url("../img/dark-icon/search--dark.svg");
+      }
       height: 2rem;
       width: 2rem;
       margin-left: 2rem;
@@ -48,15 +57,24 @@
 
     &-person {
       background: url("../img/icon-person.svg");
+      &--dark {
+        background: url("../img/dark-icon/icon-person--dark.svg");
+      }
       background-repeat: no-repeat;
     }
 
     &-heart {
       background: url("../img/icon-wishlist.svg");
+      &--dark {
+        background: url("../img/dark-icon/icon-wishlist--dark.svg");
+      }
     }
 
     &-cart {
       background: url("../img/icon-shopping-cart.svg");
+      &--dark {
+        background: url("../img/dark-icon/icon-shopping-cart--dark.svg");
+      }
     }
   }
 }

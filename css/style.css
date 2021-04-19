@@ -303,6 +303,8 @@ body {
       .header--product__img--sofa {
         height: 50vh;
         width: auto; }
+  .header--product-details {
+    background-color: #fff; }
 
 .navigation {
   display: flex;
@@ -318,12 +320,16 @@ body {
     text-decoration: none;
     font-size: 1.6rem;
     margin-right: 2rem; }
+    .navigation__link--dark {
+      color: #43283a; }
   .navigation__list {
     display: flex;
     align-items: center; }
   .navigation__bar {
     color: #fff;
     font-size: 4.5rem; }
+    .navigation__bar--dark {
+      color: #43283a; }
   .navigation__item {
     display: inline-block; }
   .navigation__icons {
@@ -338,15 +344,23 @@ body {
       height: 2rem;
       width: 2rem;
       margin-left: 2rem; }
+      .navigation__icons-search--dark {
+        background: url("../img/dark-icon/search--dark.svg"); }
     .navigation__icons-pin {
       background: url("../../img/pin-icon.svg"); }
     .navigation__icons-person {
       background: url("../img/icon-person.svg");
       background-repeat: no-repeat; }
+      .navigation__icons-person--dark {
+        background: url("../img/dark-icon/icon-person--dark.svg"); }
     .navigation__icons-heart {
       background: url("../img/icon-wishlist.svg"); }
+      .navigation__icons-heart--dark {
+        background: url("../img/dark-icon/icon-wishlist--dark.svg"); }
     .navigation__icons-cart {
       background: url("../img/icon-shopping-cart.svg"); }
+      .navigation__icons-cart--dark {
+        background: url("../img/dark-icon/icon-shopping-cart--dark.svg"); }
 
 .footer {
   width: 100vw;
