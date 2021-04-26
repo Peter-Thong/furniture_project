@@ -5,6 +5,13 @@
   align-items: center;
   padding: 1rem 28rem;
 
+  &__path {
+    width: fit-content;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 1px solid $color-primary;
+  }
+
   &__link {
     &--dark {
       color: $color-primary;

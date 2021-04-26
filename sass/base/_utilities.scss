@@ -9,6 +9,13 @@
 .white-color {
   color: $color-white;
 }
+.space-right-small {
+  margin-right: 2rem;
+}
+
+.margin-top-small {
+  margin-top: 2rem;
+}
 
 .space-bottom {
   margin-bottom: 2.3rem;
@@ -39,4 +46,13 @@
 .container {
   margin-left: 13rem;
   margin-bottom: 10rem;
+}
+
+.row-1 {
+  display: flex;
+  align-items: center;
+}
+
+.no-margin {
+  margin: 0;
 }
