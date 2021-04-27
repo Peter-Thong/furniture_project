@@ -3,7 +3,7 @@
   height: 9%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 28rem;
+  padding: 1px 280px;
 
   &__path {
     width: fit-content;
@@ -54,6 +54,8 @@
       &--dark {
         background: url("../img/dark-icon/search--dark.svg");
       }
+
+      background-repeat: no-repeat;
       height: 2rem;
       width: 2rem;
       margin-left: 2rem;

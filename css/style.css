@@ -6,7 +6,20 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -338,7 +351,7 @@ body {
   height: 9%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 28rem; }
+  padding: 1px 280px; }
   .navigation__path {
     width: fit-content;
     font-size: 1.6rem;
@@ -373,6 +386,7 @@ body {
     display: block; }
     .navigation__icons-search {
       background: url("../img/icon-search.svg");
+      background-repeat: no-repeat;
       height: 2rem;
       width: 2rem;
       margin-left: 2rem; }
