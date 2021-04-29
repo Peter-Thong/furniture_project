@@ -19,7 +19,7 @@ html {
       font-size: 30%; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 70%; } }
 
 body {
   box-sizing: border-box; }
@@ -186,6 +186,21 @@ body {
     top: 8rem;
     right: 0rem; }
 
+.logo {
+  width: 25rem; }
+  @media (max-width: 75em) {
+    .logo {
+      width: 20rem; } }
+  @media (max-width: 56.25em) {
+    .logo {
+      width: 15rem; } }
+  @media (max-width: 37.5em) {
+    .logo {
+      width: 10rem; } }
+  @media (min-width: 112.5em) {
+    .logo {
+      width: 30rem; } }
+
 .star-icon {
   height: 2rem;
   width: 2rem;
@@ -351,7 +366,10 @@ body {
   height: 9%;
   justify-content: space-between;
   align-items: center;
-  padding: 1px 280px; }
+  padding: 10px 180px; }
+  @media (min-width: 112.5em) {
+    .navigation {
+      padding: 10px 250px; } }
   .navigation__path {
     width: fit-content;
     font-size: 1.6rem;
@@ -384,6 +402,9 @@ body {
     width: 2.2rem;
     margin-right: 4rem;
     display: block; }
+    @media (min-width: 112.5em) {
+      .navigation__icons {
+        margin-right: 3rem; } }
     .navigation__icons-search {
       background: url("../img/icon-search.svg");
       background-repeat: no-repeat;
@@ -400,13 +421,26 @@ body {
       .navigation__icons-person--dark {
         background: url("../img/dark-icon/icon-person--dark.svg"); }
     .navigation__icons-heart {
-      background: url("../img/icon-wishlist.svg"); }
+      background: url("../img/icon-wishlist.svg");
+      background-repeat: no-repeat; }
       .navigation__icons-heart--dark {
         background: url("../img/dark-icon/icon-wishlist--dark.svg"); }
     .navigation__icons-cart {
-      background: url("../img/icon-shopping-cart.svg"); }
+      background: url("../img/icon-shopping-cart.svg");
+      background-repeat: no-repeat; }
       .navigation__icons-cart--dark {
         background: url("../img/dark-icon/icon-shopping-cart--dark.svg"); }
+
+.shopping__link-small-screen {
+  display: none; }
+
+@media (max-width: 95em) {
+  .shopping__link-small-screen {
+    display: inline-block; }
+  .navigation {
+    padding: 10px 150px; }
+  .shopping__link-big-screen {
+    display: none; } }
 
 .footer {
   width: 100vw;
