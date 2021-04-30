@@ -16,7 +16,37 @@
 <body>
     <header class="header header--main">
 
-        <nav class="navigation">
+        <nav class="navigation navigation--small-screen">
+            <div class="navigation__burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">living room</a></li>
+                <li class="navigation__item"><a href="livingRoom.html"
+                        class="navigation__link">bedroom</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">kitchen &
+                        dining</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">contact</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">search</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">profile</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">wish list</a></li>
+            </ul>
+
+            <div class="logo">
+                <img src="./img/small-logo.svg" width="100%" alt="company brand">
+            </div>
+
+            <div class="navigation__burger">
+                <a href="#"><span class="navigation__icons navigation__icons-cart"></span></a>
+            </div>
+        </nav>
+
+        <nav class="navigation navigation--big-screen">
+
             <div class="logo">
                 <img src="./img/brand.svg" width="100%" alt="company brand">
             </div>
@@ -34,8 +64,6 @@
                 <li class="navigation__item"><a href="#"><span class="navigation__icons navigation__icons-heart"></span></a></li>
                 <li class="navigation__item"><a href="#"><span class="navigation__icons navigation__icons-cart"></span></a></li>
             </ul>
-
-    
         </nav>
         <div class="header__text-box header__text-box--main">
 
@@ -232,5 +260,7 @@
             </p>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

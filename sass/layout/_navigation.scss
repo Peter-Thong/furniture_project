@@ -1,14 +1,79 @@
+@media (max-width: 95em) {
+  .shopping__link-small-screen {
+    display: inline-block;
+  }
+
+  .navigation {
+    padding: 10px 150px;
+  }
+  .shopping__link-big-screen {
+    display: none;
+  }
+}
+
 .navigation {
   display: flex;
   height: 9%;
   justify-content: space-between;
   align-items: center;
   padding: 10px 180px;
-
-  @include respond(big-desktop) {
-    padding: 10px 250px;
+  &--small-screen {
+    display: none;
   }
 
+  @include respond(tab-land) {
+    padding: 10px 30px;
+  }
+  @include respond(tab-port) {
+    padding: 10px 20px;
+  }
+  @include respond(phone) {
+    padding: 10px 10px;
+  }
+  @include respond(big-desktop) {
+    padding: 10px 180px;
+  }
+
+  &__burger {
+    height: 5rem;
+    width: 5rem;
+    background-color: $color-dark;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
+    @include respond(tab-land) {
+      padding: 13px 10px;
+    }
+    @include respond(tab-port) {
+      padding: 10px 7px;
+    }
+    @include respond(phone) {
+      padding: 13px 9px;
+      height: 7rem;
+      width: 7rem;
+    }
+
+    & div {
+      width: 20px;
+      height: 2px;
+      background-color: $color-white;
+      margin: 3px;
+      transition: all 0.3s ease;
+      z-index: 100;
+    }
+
+    &--toggle {
+      & .line1 {
+        transform: rotate(-45deg) translate(-3px, 4px);
+      }
+      & .line2 {
+        opacity: 0;
+      }
+      & .line3 {
+        transform: rotate(45deg) translate(-3px, -4px);
+      }
+    }
+  }
   &__path {
     width: fit-content;
     font-size: 1.6rem;
@@ -27,11 +92,29 @@
     text-decoration: none;
     font-size: 1.6rem;
     margin-right: 2rem;
+
+    @include respond(tab-land) {
+      font-family: "Playfair Display", serif;
+      font-size: 2.4rem;
+    }
   }
 
   &__list {
     display: flex;
     align-items: center;
+    @include respond(tab-land) {
+      z-index: 30;
+      position: absolute;
+      left: 0px;
+      height: 100vh;
+      width: 50%;
+      top: 0px;
+      background-color: $color-primary;
+      flex-direction: column;
+      justify-content: space-around;
+      transition: transform 0.5s ease-in;
+      transform: translateX(-100%);
+    }
   }
 
   &__bar {
@@ -42,8 +125,15 @@
     font-size: 4.5rem;
   }
 
+  &-active {
+    transform: translateX(0%);
+  }
+
   &__item {
     display: inline-block;
+    @include respond(tab-land) {
+      opacity: 0;
+    }
   }
   &__icons {
     background-size: cover;
@@ -52,6 +142,19 @@
     width: 2.2rem;
     margin-right: 4rem;
     display: block;
+    @include respond(tab-land) {
+      height: 2.2rem;
+      width: 2.5rem;
+    }
+    @include respond(tab-port) {
+      height: 2.7rem;
+      width: 2.6rem;
+    }
+    @include respond(phone) {
+      padding: 13px 9px;
+      height: 7rem;
+      width: 7rem;
+    }
     @include respond(big-desktop) {
       margin-right: 3rem;
     }
@@ -103,15 +206,50 @@
   display: none;
 }
 
-@media (max-width: 95em) {
-  .shopping__link-small-screen {
-    display: inline-block;
+@include respond(tab-land) {
+  .navigation--big-screen {
+    display: none;
   }
 
-  .navigation {
-    padding: 10px 150px;
+  .navigation--small-screen {
+    display: flex;
   }
-  .shopping__link-big-screen {
+}
+@include respond(tab-port) {
+  .navigation--big-screen {
+    display: none;
+  }
+
+  .navigation--small-screen {
+    display: flex;
+  }
+}
+@include respond(phone) {
+  .navigation--big-screen {
+    display: none;
+  }
+
+  .navigation--small-screen {
+    display: flex;
+  }
+}
+@include respond(big-desktop) {
+  .navigation--big-screen {
+    display: flex;
+  }
+
+  .navigation--small-screen {
     display: none;
   }
 }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+} ;

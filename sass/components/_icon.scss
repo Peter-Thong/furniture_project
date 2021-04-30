@@ -21,10 +21,10 @@
 .logo {
   width: 25rem;
   @include respond(tab-land) {
-    width: 20rem;
+    width: 10rem;
   }
   @include respond(tab-port) {
-    width: 15rem;
+    width: 10rem;
   }
   @include respond(phone) {
     width: 10rem;
