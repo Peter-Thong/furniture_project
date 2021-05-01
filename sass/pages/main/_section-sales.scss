@@ -1,6 +1,6 @@
 .section-sales {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   &__content {
     display: flex;
@@ -9,8 +9,9 @@
   }
 
   &__items {
+    width: 80%;
+    margin: 6rem auto;
     display: flex;
-    padding: 10rem 40rem 5rem 40rem;
     align-items: center;
     justify-content: space-between;
     &-1 {

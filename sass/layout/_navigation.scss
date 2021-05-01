@@ -1,13 +1,6 @@
 @media (max-width: 95em) {
-  .shopping__link-small-screen {
-    display: inline-block;
-  }
-
   .navigation {
     padding: 10px 150px;
-  }
-  .shopping__link-big-screen {
-    display: none;
   }
 }
 
@@ -204,6 +197,15 @@
 
 .shopping__link-small-screen {
   display: none;
+}
+
+@media (max-width: 95em) {
+  .shopping__link-small-screen {
+    display: inline-block;
+  }
+  .shopping__link-big-screen {
+    display: none;
+  }
 }
 
 @include respond(tab-land) {

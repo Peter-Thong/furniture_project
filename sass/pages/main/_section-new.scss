@@ -1,26 +1,63 @@
 .section-new {
   width: 100vw;
-  height: 181vh;
+  @include respond(tab-port) {
+    text-align: center;
+  }
   &__top {
     position: relative;
-    height: 100vh;
+    min-height: 175vh;
     background-image: linear-gradient(
       to bottom,
       rgba($color-primary-dark, 1),
       rgba($color-primary, 1)
     );
+
+    @media (max-width: 95em) {
+      min-height: 160vh;
+    }
+
+    @media (max-width: 80em) {
+      min-height: 150vh;
+    }
+
+    @media (max-height: 800px) {
+      min-height: 200vh;
+    }
+    @include respond(tab-land) {
+      min-height: 170vh;
+    }
+    @include respond(big-desktop) {
+      min-height: 200vh;
+    }
   }
 
   &__bottom {
     position: absolute;
-    top: 0;
+    bottom: 10rem;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
     opacity: 1;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
+
+    @media (max-width: 95em) {
+      bottom: 3rem;
+    }
+
+    @include respond(tab-land) {
+      bottom: 0;
+    }
+    // @include respond(tab-port) {
+    //   padding: 10px 20px;
+    // }
+    // @include respond(phone) {
+    //   padding: 10px 10px;
+    // }
+    @include respond(big-desktop) {
+      bottom: 5vw;
+    }
   }
 
   &__top-content {
@@ -28,6 +65,14 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    @include respond(tab-port) {
+      flex-flow: column;
+      align-items: space-around;
+      justify-content: center;
+
+      width: 80%;
+    }
   }
   &__bottom-content {
     width: 130rem;
@@ -36,6 +81,10 @@
     padding-left: 10rem;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__shape {
@@ -46,7 +95,6 @@
       width: 45rem;
       border-radius: 32rem / 45rem;
       box-shadow: -3rem 2rem 2rem rgba($color-shadow, 0.9);
-      margin-right: 30rem;
     }
 
     &--bottom {
@@ -54,7 +102,6 @@
       width: 63rem;
       border-radius: 45rem / 32rem;
       box-shadow: -2rem 3rem 2rem rgba($color-shadow, 0.6);
-      margin-left: 20rem;
     }
   }
 
@@ -65,14 +112,32 @@
   &-detail {
     display: flex;
     flex-direction: column;
+    @include respond(tab-port) {
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   &__call-action {
     display: flex;
     align-items: center;
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: space-around;
+    }
   }
 
   &__svg {
-    position: relative;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    &--path {
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
   }
 }

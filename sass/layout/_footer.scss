@@ -1,12 +1,13 @@
 .footer {
   width: 100vw;
-  height: 50vh;
+  height: 600px;
+  height: 600px;
   background-color: $color-primary;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 1.6rem;
-  padding: 2rem 28rem;
+  padding: 2rem 16rem;
 
   &__link {
     display: flex;
@@ -72,6 +73,10 @@
       flex-direction: column;
       align-items: center;
       margin-top: 10rem;
+      &-form {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 
