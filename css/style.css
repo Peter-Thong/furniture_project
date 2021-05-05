@@ -680,16 +680,31 @@ body {
     align-items: center; }
   .section-sales__items {
     width: 80%;
+    text-align: center; }
+    .section-sales__items .owl-nav .owl-next,
+    .section-sales__items .owl-nav .owl-prev {
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      color: #43283a;
+      font-size: 6rem;
+      background: none;
+      border: none;
+      outline: none; }
+    .section-sales__items .owl-nav .owl-next {
+      right: 1rem; }
+    .section-sales__items .owl-nav .owl-prev {
+      left: 1rem; }
+    .section-sales__items .owl-dot {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%); }
+  .section-sales__item {
+    height: 70rem;
+    width: 36rem;
     margin: 6rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .section-sales__items-1 {
-      position: relative; }
-    .section-sales__items-2 {
-      position: relative; }
-    .section-sales__items-3 {
-      position: relative; }
+    position: relative; }
   .section-sales__icons {
     height: 0.8rem;
     width: 2rem;
