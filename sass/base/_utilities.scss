@@ -70,6 +70,10 @@ hr {
   width: 40%;
 }
 
+.background-dark {
+  background-color: $color-dark;
+}
+
 .horizontal__small-screen {
   &--white {
     border-top: 1rem dotted $color-white;
@@ -81,4 +85,8 @@ hr {
   @include respond(tab-port) {
     display: inline-block;
   }
+}
+
+.display-none {
+  display: none;
 }

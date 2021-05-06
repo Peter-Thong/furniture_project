@@ -20,6 +20,7 @@
 
 .logo {
   width: 25rem;
+
   @include respond(tab-land) {
     width: 10rem;
   }

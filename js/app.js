@@ -47,4 +47,22 @@ $(document).ready(function () {
       },
     },
   });
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      $(".navigation-fixed").addClass("background-dark");
+
+      $(".navigation--small-screen > .logo").addClass("display-none");
+    } else {
+      $(".navigation-fixed").removeClass("background-dark");
+      $(".navigation--small-screen > .logo").removeClass("display-none");
+    }
+  }
 });
