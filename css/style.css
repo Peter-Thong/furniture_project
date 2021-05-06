@@ -147,6 +147,25 @@ body {
 .no-padding {
   padding: 0; }
 
+hr {
+  border: none;
+  border-top: 1rem dotted #43283a;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 40%; }
+
+.horizontal__small-screen {
+  margin-top: 3rem;
+  display: none; }
+  .horizontal__small-screen--white {
+    border-top: 1rem dotted #fff;
+    color: #43283a;
+    background-color: #43283a; }
+  @media (max-width: 56.25em) {
+    .horizontal__small-screen {
+      display: inline-block; } }
+
 .btn {
   font-family: inherit;
   height: 4.4rem;
@@ -784,6 +803,9 @@ body {
     height: 3.3rem;
     width: 3.3rem;
     display: block; }
+    @media (max-width: 56.25em) {
+      .section-gallery__icons {
+        margin-bottom: 2rem; } }
     .section-gallery__icons-pin {
       background: url("../img/pin-icon.svg");
       background-repeat: no-repeat;
@@ -807,21 +829,6 @@ body {
         grid-column: 1 / 3;
         grid-row: 4 / 5; } }
 
-hr {
-  border: none;
-  border-top: 1rem dotted #43283a;
-  color: #fff;
-  background-color: #fff;
-  height: 1px;
-  width: 40%; }
-
-.horizontal__small--screen {
-  margin-top: 3rem;
-  display: none; }
-  @media (max-width: 56.25em) {
-    .horizontal__small--screen {
-      display: inline-block; } }
-
 .section-new {
   width: 100vw; }
   @media (max-width: 56.25em) {
@@ -843,6 +850,12 @@ hr {
     @media (max-width: 75em) {
       .section-new__top {
         min-height: 170vh; } }
+    @media (max-width: 56.25em) {
+      .section-new__top {
+        min-height: 210vh; } }
+    @media (max-width: 37.5em) {
+      .section-new__top {
+        min-height: 180vh; } }
     @media (min-width: 112.5em) {
       .section-new__top {
         min-height: 200vh; } }
@@ -887,7 +900,12 @@ hr {
     justify-content: space-around; }
     @media (max-width: 56.25em) {
       .section-new__bottom-content {
-        flex-direction: column; } }
+        flex-direction: column-reverse;
+        align-items: space-around;
+        justify-content: center;
+        padding-top: 10rem;
+        padding-left: 0rem;
+        width: 80%; } }
   .section-new__shape {
     position: relative;
     overflow: hidden; }
@@ -916,7 +934,8 @@ hr {
     @media (max-width: 56.25em) {
       .section-new__call-action {
         flex-direction: column;
-        justify-content: space-around; } }
+        justify-content: space-between;
+        height: 11rem; } }
   .section-new__svg {
     position: absolute;
     bottom: 0%;
@@ -924,6 +943,9 @@ hr {
     width: 100vw;
     height: auto;
     overflow: hidden; }
+    @media (max-width: 56.25em) {
+      .section-new__svg {
+        height: 100vh; } }
     @media (max-width: 56.25em) {
       .section-new__svg--path {
         display: none; } }
