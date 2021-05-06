@@ -7,6 +7,10 @@
   grid-template-rows: 1fr 0.8fr 1fr;
   gap: 3rem;
 
+  @include respond(tab-port) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.9fr 1fr 1fr;
+  }
   &__img {
     width: 100%;
     height: 100%;
@@ -17,24 +21,44 @@
     background-color: white;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+
+    @include respond(tab-port) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
   }
 
   &__image--2 {
     background-color: white;
     grid-column: 3 / 4;
     grid-row: 1 / 3;
+
+    @include respond(tab-port) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
   }
 
   &__image--3 {
     background-color: white;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
+
+    @include respond(tab-port) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
   }
 
   &__image--4 {
     background-color: white;
     grid-column: 2 / 4;
     grid-row: 3 / 4;
+
+    @include respond(tab-port) {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
   }
 
   &__icons {
@@ -59,9 +83,15 @@
     background-color: white;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include respond(tab-port) {
+      grid-column: 1 / 3;
+      grid-row: 4 / 5;
+    }
   }
 }
