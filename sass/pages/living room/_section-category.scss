@@ -3,20 +3,20 @@
   height: auto;
   background-color: $color-white;
 
+  &__item {
+    position: relative;
+    @include respond(tab-port) {
+      margin-bottom: 5rem;
+    }
+  }
   &__items {
     display: flex;
-    padding: 10rem 40rem 5rem 40rem;
+    // padding: 10rem 40rem 5rem 40rem;
+    width: 80%;
+    margin: 7rem auto;
+
     align-items: center;
-    justify-content: space-between;
-    &-1 {
-      position: relative;
-    }
-    &-2 {
-      position: relative;
-    }
-    &-3 {
-      position: relative;
-    }
+    justify-content: space-around;
     &--shape {
       position: relative;
       overflow: hidden;
@@ -36,6 +36,19 @@
         width: 70%;
         margin-left: 10rem;
       }
+    }
+
+    @media (max-width: 95em) {
+      width: 90%;
+    }
+
+    @include respond(tab-land) {
+      width: 95%;
+      justify-content: space-between;
+    }
+
+    @include respond(tab-port) {
+      flex-flow: column;
     }
   }
 
