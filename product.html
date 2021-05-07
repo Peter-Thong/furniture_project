@@ -18,33 +18,71 @@
 <body>
     <header class="header header--product">
 
-        <nav class="navigation">
-            <div class="logo">
-                <img src="./img/brand.svg" alt="company brand">
+        <nav class="navigation-fixed--small">
+            <div class="navigation navigation--small-screen">
+                <div class="navigation__burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">home</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">living room</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">bedroom</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">kitchen &
+                            dining</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">contact</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">search</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">profile</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">wish list</a></li>
+                </ul>
+        
+                <div class="logo">
+                    <a href="index.html"><img src="./img/small-logo.svg" width="100%" alt="company brand"></a>
+                </div>
+        
+                <div class="navigation__burger">
+                    <a href="#"><span class="navigation__icons navigation__icons-cart"></span></a>
+                </div>
             </div>
-
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="index.html" class="navigation__link">home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">living room</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">bedroom</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">kitchen & dining</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
-                <li class="navigation__item"><span class="navigation__bar">&#10072;</span></li>
-                <li class="navigation__item"><a href="#"><span
-                            class="navigation__icons navigation__icons-search"></span></a></li>
-                <li class="navigation__item"><a href="#"><span
-                            class="navigation__icons navigation__icons-person"></span></a></li>
-                <li class="navigation__item"><a href="#"><span
-                            class="navigation__icons navigation__icons-heart"></span></a></li>
-                <li class="navigation__item"><a href="#"><span
-                            class="navigation__icons navigation__icons-cart"></span></a></li>
-            </ul>
-
-
+        </nav>
+        
+        
+        <nav class="navigation-fixed navigation--big-screen">
+        
+            <div class="navigation navigation--big-screen">
+        
+                <div class="logo">
+                    <a href="index.html"><img src="./img/brand.svg" width="100%" alt="company brand"></a>
+                </div>
+        
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">home</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html"
+                            class="navigation__link shopping__link-big-screen">living room</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html"
+                            class="navigation__link shopping__link-big-screen">bedroom</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html"
+                            class="navigation__link shopping__link-big-screen">kitchen & dining</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html"
+                            class="navigation__link shopping__link-small-screen">Shopping</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">contact</a></li>
+                    <li class="navigation__item"><span class="navigation__bar">&#10072;</span></li>
+                    <li class="navigation__item"><a href="#"><span
+                                class="navigation__icons navigation__icons-search"></span></a></li>
+                    <li class="navigation__item"><a href="#"><span
+                                class="navigation__icons navigation__icons-person"></span></a></li>
+                    <li class="navigation__item"><a href="#"><span class="navigation__icons navigation__icons-heart"></span></a>
+                    </li>
+                    <li class="navigation__item"><a href="#"><span class="navigation__icons navigation__icons-cart"></span></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="header__text-box header__text-box--product">
 
-            <div class="container">
+            <div class="header__text-box--product-container">
                 <h1 class="heading-primary white-color space-bottom-medium">Sofas</h1>
                 <h3 class="heading-tertiary white-color space-bottom-medium">Enjoy your life</h3>
                 <p class="paragraph space-bottom-medium white-color">Lorem ipsum dolor sit amet, consetetur<br />
@@ -65,7 +103,7 @@
     </header>
 
     <main>
-        <section class="section-product">
+        <!-- <section class="section-product">
             <div class="u-center-text">
                 <h2 class="heading-secondary dark-color">All Sofas</h2>
             </div>
@@ -339,7 +377,7 @@
                     </div>
                 </div>
                 </div>
-        </section>
+        </section> -->
     </main>
 
     <footer class="footer">
@@ -360,25 +398,30 @@
             </div>
         </div>
         <div class="footer__logo">
-            <div class="logo">
-                <img src="./img/footer-logo.svg" alt="company brand">
+            <div class="footer__logo-lo">
+                <img src="./img/footer-logo.svg" width="100%" alt="company brand">
             </div>
-
-            <div class="footer__logo--email">
+    
+            <div class="footer__logo--email u-center-text">
                 <h4 class="heading-quaternary lato-font">Subscribe to our newsletter</h4>
-                <div>
+                <div class="footer__logo--email-form">
                     <input type="text" placeholder="Email Address" class="footer__input">
                     <button class="footer__btn">OK</button>
                 </div>
             </div>
         </div>
         <div class="footer__information">
-            <p>497 Evergreen Rd. Roseville, CA 95673<br>
-                +44 345 678 903<br>
-                adobexd@mail.com
+            <p>145 Sawmill rd,North York, CA<br>
+                (647)-914-1857<br>
+                thong01677@gmail.com
             </p>
         </div>
     </footer>
+
+    <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.keyframes.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
 </body>
 
 </html>
