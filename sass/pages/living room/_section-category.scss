@@ -28,6 +28,13 @@
       background-color: $color-primary;
       border-radius: 37rem / 45rem;
       box-shadow: 2rem 1rem 2rem rgba($color-shadow, 0.6);
+
+      @include respond(tab-land) {
+        height: 40rem;
+        width: 34rem;
+        background-color: $color-primary;
+        border-radius: 34rem / 40rem;
+      }
     }
     &--img {
       width: 95%;

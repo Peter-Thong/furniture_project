@@ -7,11 +7,28 @@
     padding: 8rem 28rem;
     display: flex;
     justify-content: center;
+    @include respond(tab-port) {
+      flex-flow: column;
+      width: 100vw;
+      padding: 8rem 5rem;
+      align-items: center;
+    }
   }
 
   &__img {
     width: 42.8rem;
     margin: 2.6rem 2.6rem;
+    @media (max-width: 95em) {
+      width: 35rem;
+    }
+
+    @include respond(tab-land) {
+      width: 30rem;
+    }
+    @include respond(tab-port) {
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__link {
@@ -20,5 +37,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &-big-screen {
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &-small-screen {
+      display: none;
+      @include respond(tab-port) {
+        display: flex;
+      }
+    }
   }
 }
