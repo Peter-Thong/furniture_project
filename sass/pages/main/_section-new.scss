@@ -95,6 +95,7 @@
       padding-top: 10rem;
       padding-left: 0rem;
       width: 80%;
+      height: 100vh;
     }
   }
 
@@ -147,7 +148,8 @@
     height: auto;
     overflow: hidden;
     @include respond(tab-port) {
-      height: 100vh;
+      height: 90vh;
+      position: relative;
     }
     &--path {
       @include respond(tab-port) {
