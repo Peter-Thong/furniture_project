@@ -1,9 +1,24 @@
 .section-product {
   width: 100vw;
   height: auto;
+  margin-top: -25vh;
+  padding: 27rem 0 10rem 0;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width: 95em) {
+      width: 95%;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
 
   &__sort {
-    width: 20vw;
+    width: 40rem;
     margin: 4rem auto;
     display: flex;
     align-items: center;
@@ -36,7 +51,7 @@
         background-color: transparent;
         border: 1px solid $color-primary;
         border-radius: 50%;
-        transform: translate(-3.5px, -3.4px);
+        transform: translate(-50%, -16%);
       }
     }
 
