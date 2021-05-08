@@ -73,6 +73,11 @@ hr {
   width: 40%;
 }
 
+.horizontal--about {
+  border-top: 0.5rem dotted $color-primary;
+  width: 80%;
+}
+
 .background-dark {
   background-color: $color-dark;
 }

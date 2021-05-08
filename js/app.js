@@ -28,6 +28,14 @@ $(document).ready(function () {
     $(".navigation__burger").toggleClass("navigation__burger--toggle");
   });
 
+  $(".navigation__link--contact").click(() => {
+    $(".aboutus").addClass("aboutus-active");
+  });
+
+  $(".aboutus__exit").click(() => {
+    $(".aboutus").removeClass("aboutus-active");
+  });
+
   $(".product-slider").owlCarousel({
     loop: true,
     nav: true,

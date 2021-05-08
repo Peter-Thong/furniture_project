@@ -99,6 +99,9 @@
     text-decoration: none;
     font-size: 1.6rem;
     margin-right: 2rem;
+    &--contact {
+      cursor: pointer;
+    }
 
     @include respond(tab-land) {
       font-family: "Playfair Display", serif;
