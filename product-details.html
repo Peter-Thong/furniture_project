@@ -10,6 +10,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.green.min.css">
 
     <link rel="shortcut icon" type="image/svg" href="img/company-icon.svg">
     <title>Maynooth furniture</title>
@@ -17,18 +19,81 @@
 
 <body>
     <header class="header header--product-details">
+        <nav class="navigation-fixed--small">
+            <div class="navigation navigation--small-screen">
+                <div class="navigation__burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">home</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">living room</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">bedroom</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">kitchen &
+                            dining</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">contact</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">search</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">profile</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">wish list</a></li>
+                </ul>
+        
+                <div class="logo">
+                    <a href="index.html"><img src="./img/small-logo.svg" width="100%" alt="company brand"></a>
+                </div>
+        
+                <div class="navigation__burger">
+                    <a href="#"><span class="navigation__icons navigation__icons-cart"></span></a>
+                </div>
+            </div>
+        </nav>
 
-        <nav class="navigation">
+        <nav class="navigation-fixed navigation--big-screen navigation--light">
+        
+            <div class="navigation navigation--big-screen">
+        
+                <div class="logo">
+                    <a href="index.html"><img src="./img/brand.svg" width="100%" alt="company brand"></a>
+                </div>
+        
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">home</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html"
+                            class="navigation__link shopping__link-big-screen">living room</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html"
+                            class="navigation__link shopping__link-big-screen">bedroom</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html"
+                            class="navigation__link shopping__link-big-screen">kitchen & dining</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html"
+                            class="navigation__link shopping__link-small-screen">Shopping</a></li>
+                    <li class="navigation__item"><a href="livingRoom.html" class="navigation__link">contact</a></li>
+                    <li class="navigation__item"><span class="navigation__bar">&#10072;</span></li>
+                    <li class="navigation__item"><a href="#"><span
+                                class="navigation__icons navigation__icons-search"></span></a></li>
+                    <li class="navigation__item"><a href="#"><span
+                                class="navigation__icons navigation__icons-person"></span></a></li>
+                    <li class="navigation__item"><a href="#"><span class="navigation__icons navigation__icons-heart"></span></a>
+                    </li>
+                    <li class="navigation__item"><a href="#"><span class="navigation__icons navigation__icons-cart"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navigation-fixed navigation--big-screen navigation--dark">
+        <div class="navigation navigation--big-screen">
             <div class="logo">
-                <img src="./img/dark-icon/brand--dark.svg" alt="company brand">
+                <img src="./img/dark-icon/brand--dark.svg" width="100%" alt="company brand">
             </div>
 
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="index.html" class="navigation__link navigation__link--dark">home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link--dark">living room</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link--dark">bedroom</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link--dark">kitchen & dining</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link--dark">contact</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link  shopping__link-big-screen navigation__link--dark">living room</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link  shopping__link-big-screen navigation__link--dark">bedroom</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link  shopping__link-big-screen navigation__link--dark">kitchen & dining</a></li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link navigation__link--dark shopping__link-small-screen">Shopping</a>
+                </li>
+                <li class="navigation__item"><a href="livingRoom.html" class="navigation__link navigation__link--dark">contact</a></li>
                 <li class="navigation__item"><span class="navigation__bar navigation__bar--dark">&#10072;</span></li>
                 <li class="navigation__item"><a href="#"><span
                             class="navigation__icons navigation__icons-search navigation__icons-search--dark"></span></a></li>
@@ -41,6 +106,7 @@
             </ul>
 
 
+        </div>
         </nav>
         <div class="header__text-box header__text-box--product-details">
             <div class="navigation__path">
@@ -86,12 +152,13 @@
                     </div>
                     <h3 class="heading-tertiary dark-color space-bottom-tiny">$2800</h3>
                     <div class="product__info--action space-bottom-medium">
-                        <button class="btn btn--dark space-right-small">add to cart</button>
+                        <button class="btn btn--dark space-right-small product__info--action-btn">add to cart</button>
                         <span class="icon-heart--dark"></span>
                     </div>
 
                     <a href="#" class="link-text__sales dark-color medium-text">See detail<span
                             class="section-sales__icons section-sales__icons-arrow section-sales__icons-arrow--down"></span></a>
+                            <hr class="horizontal__small-screen">
                 </div>
             </div>
         </div>
@@ -129,7 +196,7 @@
                         </li>
                     </ul>
 
-                    <div class="row-1">
+                    <div class="row-1 section-product-details__content-collect">
                         <a href="#" class="link-text dark-color space-right-small">View Collection</a>
                         <a href="#"><span class="section-gallery__icons section-gallery__icons-pin no-margin"></span></a>
                     </div>
@@ -144,11 +211,10 @@
         <section class="similar-product margin-top-small">
             <div class="u-center-text">
                 <h2 class="heading-secondary dark-color">Similar Products</h2>
-            
             </div>
 
-            <div class="section-sales__items">
-                <div class="section-sales__items-1">
+            <div class="section-sales__items product-slider owl-carousel owl-theme">
+                <div class="section-sales__item item">
                     <figure class="section-sales__shape">
                         <img src="./img/sale-img-1.png" alt="sale-img" class="section-new__img">
                     </figure>
@@ -158,7 +224,6 @@
                     <div class="circle-icon circle-icon--cart">
                         <span class=" icon__sales icon__sales--cart"></span>
                     </div>
-            
                     <div class="section-sales__content">
                         <h3 class="heading-tertiary dark-color">Wood Table</h3>
                         <div class="horizontal-align space-bottom-tiny">
@@ -177,7 +242,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-sales__items-2">
+                <div class="section-sales__item item">
                     <figure class="section-sales__shape">
                         <img src="./img/sale-img-2.png" alt="sale-img" class="section-new__img">
                     </figure>
@@ -205,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-sales__items-3">
+                <div class="section-sales__item item">
                     <figure class="section-sales__shape">
                         <img src="./img/sale-img-3.png" alt="sale-img" class="section-new__img">
                     </figure>
@@ -233,6 +298,93 @@
                         </div>
                     </div>
                 </div>
+                <div class="section-sales__item item">
+                    <figure class="section-sales__shape">
+                        <img src="./img/sale-img-1.png" alt="sale-img" class="section-new__img">
+                    </figure>
+                    <div class="circle-icon circle-icon--heart">
+                        <span class="icon__sales icon__sales--heart"></span>
+                    </div>
+                    <div class="circle-icon circle-icon--cart">
+                        <span class=" icon__sales icon__sales--cart"></span>
+                    </div>
+                    <div class="section-sales__content">
+                        <h3 class="heading-tertiary dark-color">Wood Table</h3>
+                        <div class="horizontal-align space-bottom-tiny">
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--white"></span>
+                        </div>
+                        <h4 class="heading-quaternary dark-color space-bottom-little">from $280</h4>
+                        <div class="section-product__colors">
+                            <span class="section-product__color section-product__color--1"></span>
+                            <span class="section-product__color section-product__color--2"></span>
+                            <span class="section-product__color section-product__color--3"></span>
+                            <span class="section-product__color section-product__color--4"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-sales__item item">
+                    <figure class="section-sales__shape">
+                        <img src="./img/sale-img-2.png" alt="sale-img" class="section-new__img">
+                    </figure>
+                    <div class="circle-icon circle-icon--heart">
+                        <span class="icon__sales icon__sales--heart"></span>
+                    </div>
+                    <div class="circle-icon circle-icon--cart">
+                        <span class=" icon__sales icon__sales--cart"></span>
+                    </div>
+                    <div class="section-sales__content">
+                        <h3 class="heading-tertiary dark-color">Wood Table</h3>
+                        <div class="horizontal-align space-bottom-tiny">
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--white"></span>
+                        </div>
+                        <h4 class="heading-quaternary dark-color space-bottom-little">from $280</h4>
+                        <div class="section-product__colors">
+                            <span class="section-product__color section-product__color--1"></span>
+                            <span class="section-product__color section-product__color--2"></span>
+                            <span class="section-product__color section-product__color--3"></span>
+                            <span class="section-product__color section-product__color--4"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-sales__item item">
+                    <figure class="section-sales__shape">
+                        <img src="./img/sale-img-3.png" alt="sale-img" class="section-new__img">
+                    </figure>
+                    <div class="circle-icon circle-icon--heart">
+                        <span class="icon__sales icon__sales--heart"></span>
+                    </div>
+                    <div class="circle-icon circle-icon--cart">
+                        <span class=" icon__sales icon__sales--cart"></span>
+                    </div>
+                    <div class="section-sales__content">
+                        <h3 class="heading-tertiary dark-color">Wood Table</h3>
+                        <div class="horizontal-align space-bottom-tiny">
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--dark"></span>
+                            <span class="star-icon star-icon--white"></span>
+                        </div>
+                        <h4 class="heading-quaternary dark-color space-bottom-little">from $280</h4>
+                        <div class="section-product__colors">
+                            <span class="section-product__color section-product__color--1"></span>
+                            <span class="section-product__color section-product__color--2"></span>
+                            <span class="section-product__color section-product__color--3"></span>
+                            <span class="section-product__color section-product__color--4"></span>
+                        </div>
+                    </div>
+                </div>
+            
+                
+            
             </div>
         </section>
     </main>
@@ -255,25 +407,30 @@
             </div>
         </div>
         <div class="footer__logo">
-            <div class="logo">
-                <img src="./img/footer-logo.svg" alt="company brand">
+            <div class="footer__logo-lo">
+                <img src="./img/footer-logo.svg" width="100%" alt="company brand">
             </div>
-
-            <div class="footer__logo--email">
+    
+            <div class="footer__logo--email u-center-text">
                 <h4 class="heading-quaternary lato-font">Subscribe to our newsletter</h4>
-                <div>
+                <div class="footer__logo--email-form">
                     <input type="text" placeholder="Email Address" class="footer__input">
                     <button class="footer__btn">OK</button>
                 </div>
             </div>
         </div>
         <div class="footer__information">
-            <p>497 Evergreen Rd. Roseville, CA 95673<br>
-                +44 345 678 903<br>
-                adobexd@mail.com
+            <p>145 Sawmill rd,North York, CA<br>
+                (647)-914-1857<br>
+                thong01677@gmail.com
             </p>
         </div>
     </footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.keyframes.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 </body>
 
 </html>

@@ -29,13 +29,16 @@
     position: fixed;
     z-index: 2000;
     height: 9%;
-    transition: 0.6s;
+    transition: 1s;
     &--small {
       width: 100%;
       position: fixed;
       z-index: 1100;
       transition: 0.6s;
     }
+  }
+  &--light {
+    display: none;
   }
 
   &__burger {
@@ -167,6 +170,7 @@
       background: url("../img/icon-search.svg");
       &--dark {
         background: url("../img/dark-icon/search--dark.svg");
+        background-repeat: no-repeat;
       }
 
       background-repeat: no-repeat;
@@ -182,6 +186,7 @@
       background: url("../img/icon-person.svg");
       &--dark {
         background: url("../img/dark-icon/icon-person--dark.svg");
+        background-repeat: no-repeat;
       }
       background-repeat: no-repeat;
     }
@@ -190,6 +195,7 @@
       background: url("../img/icon-wishlist.svg");
       &--dark {
         background: url("../img/dark-icon/icon-wishlist--dark.svg");
+        background-repeat: no-repeat;
       }
 
       background-repeat: no-repeat;
@@ -199,6 +205,7 @@
       background: url("../img/icon-shopping-cart.svg");
       &--dark {
         background: url("../img/dark-icon/icon-shopping-cart--dark.svg");
+        background-repeat: no-repeat;
       }
 
       background-repeat: no-repeat;
@@ -221,7 +228,7 @@
 
 @include respond(tab-land) {
   .navigation--big-screen {
-    display: none;
+    display: none !important;
   }
 
   .navigation--small-screen {

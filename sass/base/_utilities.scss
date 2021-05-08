@@ -11,6 +11,9 @@
 }
 .space-right-small {
   margin-right: 2rem;
+  @include respond(tab-port) {
+    margin-right: 0;
+  }
 }
 
 .margin-top-small {

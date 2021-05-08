@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-around;
     @media (max-width: 95em) {
-      width: 95%;
+      width: 100%;
     }
 
     @include respond(tab-port) {

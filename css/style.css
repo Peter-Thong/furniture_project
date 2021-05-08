@@ -106,6 +106,9 @@ body {
 
 .space-right-small {
   margin-right: 2rem; }
+  @media (max-width: 56.25em) {
+    .space-right-small {
+      margin-right: 0; } }
 
 .margin-top-small {
   margin-top: 2rem; }
@@ -410,7 +413,20 @@ hr {
           width: 70vw; } }
     .header__text-box--product-details {
       width: 100vw;
-      padding: 1rem 28rem; }
+      padding: 10vh 180px;
+      height: fit-content; }
+      @media (max-width: 75em) {
+        .header__text-box--product-details {
+          padding: 10vh 30px; } }
+      @media (max-width: 56.25em) {
+        .header__text-box--product-details {
+          padding: 10vh 20px; } }
+      @media (max-width: 37.5em) {
+        .header__text-box--product-details {
+          padding: 10vh 10px; } }
+      @media (min-width: 112.5em) {
+        .header__text-box--product-details {
+          padding: 10vh 210px; } }
   .header--main {
     background-image: linear-gradient(rgba(67, 40, 58, 0.8), rgba(67, 40, 58, 0.8)), url("../img/hero-img@2x.png"); }
   .header--living {
@@ -434,8 +450,23 @@ hr {
         .header--product__img--sofa {
           width: 50rem; } }
   .header--product-details {
-    height: 80vh;
+    height: 70rem;
     background-color: #fff; }
+    @media (max-width: 95em) {
+      .header--product-details {
+        height: 55rem; } }
+    @media (max-width: 75em) {
+      .header--product-details {
+        height: 60rem; } }
+    @media (max-width: 56.25em) {
+      .header--product-details {
+        height: 125rem; } }
+    @media (max-width: 37.5em) {
+      .header--product-details {
+        height: 130rem; } }
+    @media (min-width: 112.5em) {
+      .header--product-details {
+        height: 80rem; } }
 
 .navigation {
   display: flex;
@@ -465,12 +496,14 @@ hr {
     position: fixed;
     z-index: 2000;
     height: 9%;
-    transition: 0.6s; }
+    transition: 1s; }
     .navigation-fixed--small {
       width: 100%;
       position: fixed;
       z-index: 1100;
       transition: 0.6s; }
+  .navigation--light {
+    display: none; }
   .navigation__burger {
     height: 5rem;
     width: 5rem;
@@ -579,24 +612,28 @@ hr {
       width: 2rem;
       margin-left: 2rem; }
       .navigation__icons-search--dark {
-        background: url("../img/dark-icon/search--dark.svg"); }
+        background: url("../img/dark-icon/search--dark.svg");
+        background-repeat: no-repeat; }
     .navigation__icons-pin {
       background: url("../../img/pin-icon.svg"); }
     .navigation__icons-person {
       background: url("../img/icon-person.svg");
       background-repeat: no-repeat; }
       .navigation__icons-person--dark {
-        background: url("../img/dark-icon/icon-person--dark.svg"); }
+        background: url("../img/dark-icon/icon-person--dark.svg");
+        background-repeat: no-repeat; }
     .navigation__icons-heart {
       background: url("../img/icon-wishlist.svg");
       background-repeat: no-repeat; }
       .navigation__icons-heart--dark {
-        background: url("../img/dark-icon/icon-wishlist--dark.svg"); }
+        background: url("../img/dark-icon/icon-wishlist--dark.svg");
+        background-repeat: no-repeat; }
     .navigation__icons-cart {
       background: url("../img/icon-shopping-cart.svg");
       background-repeat: no-repeat; }
       .navigation__icons-cart--dark {
-        background: url("../img/dark-icon/icon-shopping-cart--dark.svg"); }
+        background: url("../img/dark-icon/icon-shopping-cart--dark.svg");
+        background-repeat: no-repeat; }
 
 .shopping__link-small-screen {
   display: none; }
@@ -609,7 +646,7 @@ hr {
 
 @media (max-width: 75em) {
   .navigation--big-screen {
-    display: none; }
+    display: none !important; }
   .navigation--small-screen {
     display: flex; } }
 
@@ -1108,7 +1145,7 @@ hr {
     justify-content: space-around; }
     @media (max-width: 95em) {
       .section-product__items {
-        width: 95%; } }
+        width: 100%; } }
     @media (max-width: 56.25em) {
       .section-product__items {
         flex-direction: column; } }
@@ -1153,9 +1190,20 @@ hr {
   display: flex;
   flex-direction: row;
   padding: 5rem 6rem; }
+  @media (max-width: 95em) {
+    .product__container {
+      padding: 3rem 4rem; } }
+  @media (max-width: 56.25em) {
+    .product__container {
+      flex-direction: column;
+      align-items: center; } }
 
 .product__img {
   width: 50%; }
+  @media (max-width: 56.25em) {
+    .product__img {
+      width: 80%;
+      margin-bottom: 5rem; } }
   .product__img--demo {
     width: 100%; }
   .product__img--small-row {
@@ -1179,13 +1227,37 @@ hr {
   width: 50%;
   padding-left: 16rem;
   padding-top: 2rem; }
+  @media (max-width: 95em) {
+    .product__info {
+      padding-left: 10rem;
+      padding-top: 2rem; } }
+  @media (max-width: 56.25em) {
+    .product__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 80%;
+      padding-left: 0;
+      padding-top: 0; } }
   .product__info--review {
     display: flex;
     flex-direction: row; }
+    @media (max-width: 56.25em) {
+      .product__info--review {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem; } }
   .product__info--action {
     display: flex;
     flex-direction: row;
     align-items: center; }
+    @media (max-width: 56.25em) {
+      .product__info--action-btn {
+        margin-bottom: 1rem; } }
+    @media (max-width: 56.25em) {
+      .product__info--action {
+        flex-direction: column; } }
 
 .section-product-details__colors {
   display: flex;
@@ -1193,18 +1265,73 @@ hr {
   justify-content: left; }
 
 .section-product-details {
-  height: fit-content;
   width: 100vw;
-  padding: 1rem 28rem; }
+  padding: 5vh 150px;
+  height: fit-content; }
+  @media (max-width: 95em) {
+    .section-product-details {
+      padding: 5vh 100px; } }
+  @media (max-width: 75em) {
+    .section-product-details {
+      padding: 5vh 30px; } }
+  @media (max-width: 56.25em) {
+    .section-product-details {
+      padding: 5vh 20px; } }
+  @media (max-width: 37.5em) {
+    .section-product-details {
+      padding: 5vh 20px; } }
+  @media (min-width: 112.5em) {
+    .section-product-details {
+      padding: 5vh 210px; } }
+  .section-product-details__colors .section-product__color--1::before {
+    transform: translate(-16%, -16%); }
+    @media (max-width: 56.25em) {
+      .section-product-details__colors .section-product__color--1::before {
+        transform: translate(-50%, -16%); } }
   .section-product-details__content {
     display: flex; }
+    @media (max-width: 56.25em) {
+      .section-product-details__content {
+        flex-direction: column-reverse;
+        align-items: center; } }
     .section-product-details__content--info {
-      width: 50rem;
+      width: 55rem;
       height: 60rem;
       border: 1px solid #43283a;
       border-radius: 5px;
       padding: 0 7rem;
       background-color: rgba(255, 255, 255, 0.79);
       transform: translate(10rem, 6rem); }
-    .section-product-details__content--img {
-      width: 60%; }
+      @media (max-width: 95em) {
+        .section-product-details__content--info {
+          width: 65rem;
+          height: 60rem;
+          padding: 0 4rem; } }
+      @media (max-width: 56.25em) {
+        .section-product-details__content--info {
+          width: 60rem;
+          transform: translate(0, -8rem);
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
+    .section-product-details__content--img img {
+      width: 80rem; }
+      @media (max-width: 95em) {
+        .section-product-details__content--img img {
+          width: 70rem; } }
+      @media (max-width: 75em) {
+        .section-product-details__content--img img {
+          width: 60rem; } }
+      @media (max-width: 56.25em) {
+        .section-product-details__content--img img {
+          width: 80rem; } }
+      @media (max-width: 37.5em) {
+        .section-product-details__content--img img {
+          width: 70rem; } }
+    @media (max-width: 56.25em) {
+      .section-product-details__content-collect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 20rem; } }

@@ -103,7 +103,20 @@
 
     &--product-details {
       width: 100vw;
-      padding: 1rem 28rem;
+      padding: 10vh 180px;
+      height: fit-content;
+      @include respond(tab-land) {
+        padding: 10vh 30px;
+      }
+      @include respond(tab-port) {
+        padding: 10vh 20px;
+      }
+      @include respond(phone) {
+        padding: 10vh 10px;
+      }
+      @include respond(big-desktop) {
+        padding: 10vh 210px;
+      }
     }
   }
 
@@ -148,7 +161,22 @@
   }
 
   &--product-details {
-    height: 80vh;
+    height: 70rem;
     background-color: $color-white;
+    @media (max-width: 95em) {
+      height: 55rem;
+    }
+    @include respond(tab-land) {
+      height: 60rem;
+    }
+    @include respond(tab-port) {
+      height: 125rem;
+    }
+    @include respond(phone) {
+      height: 130rem;
+    }
+    @include respond(big-desktop) {
+      height: 80rem;
+    }
   }
 }

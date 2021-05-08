@@ -4,10 +4,22 @@
     display: flex;
     flex-direction: row;
     padding: 5rem 6rem;
+    @media (max-width: 95em) {
+      padding: 3rem 4rem;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__img {
     width: 50%;
+    @include respond(tab-port) {
+      width: 80%;
+      margin-bottom: 5rem;
+    }
     &--demo {
       width: 100%;
     }
@@ -38,16 +50,43 @@
     width: 50%;
     padding-left: 16rem;
     padding-top: 2rem;
+    @media (max-width: 95em) {
+      padding-left: 10rem;
+      padding-top: 2rem;
+    }
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 80%;
+      padding-left: 0;
+      padding-top: 0;
+    }
 
     &--review {
       display: flex;
       flex-direction: row;
+      @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
     }
 
     &--action {
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      &-btn {
+        @include respond(tab-port) {
+          margin-bottom: 1rem;
+        }
+      }
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -59,24 +98,92 @@
 }
 
 .section-product-details {
-  height: fit-content;
   width: 100vw;
-  padding: 1rem 28rem;
+  padding: 5vh 150px;
+  height: fit-content;
+  @media (max-width: 95em) {
+    padding: 5vh 100px;
+  }
+  @include respond(tab-land) {
+    padding: 5vh 30px;
+  }
+  @include respond(tab-port) {
+    padding: 5vh 20px;
+  }
+  @include respond(phone) {
+    padding: 5vh 20px;
+  }
+  @include respond(big-desktop) {
+    padding: 5vh 210px;
+  }
+
+  &__colors {
+    .section-product__color--1::before {
+      transform: translate(-16%, -16%);
+      @include respond(tab-port) {
+        transform: translate(-50%, -16%);
+      }
+    }
+  }
 
   &__content {
     display: flex;
+    @include respond(tab-port) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     &--info {
-      width: 50rem;
+      width: 55rem;
       height: 60rem;
       border: 1px solid $color-primary;
       border-radius: 5px;
       padding: 0 7rem;
       background-color: rgba($color-white, 0.79);
       transform: translate(10rem, 6rem);
+      @media (max-width: 95em) {
+        width: 65rem;
+        height: 60rem;
+        padding: 0 4rem;
+      }
+
+      @include respond(tab-port) {
+        width: 60rem;
+        transform: translate(0, -8rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
     &--img {
-      width: 60%;
+      img {
+        width: 80rem;
+        @media (max-width: 95em) {
+          width: 70rem;
+        }
+
+        @include respond(tab-land) {
+          width: 60rem;
+        }
+
+        @include respond(tab-port) {
+          width: 80rem;
+        }
+
+        @include respond(phone) {
+          width: 70rem;
+        }
+      }
+    }
+
+    &-collect {
+      @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 20rem;
+      }
     }
   }
 }

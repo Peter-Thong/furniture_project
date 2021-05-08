@@ -59,10 +59,16 @@ $(document).ready(function () {
     ) {
       $(".navigation-fixed").addClass("background-dark");
 
+      $(".navigation--light").css("display", "block");
+      $(".navigation--dark").css("display", "none");
+
       $(".navigation--small-screen > .logo").addClass("display-none");
     } else {
       $(".navigation-fixed").removeClass("background-dark");
       $(".navigation--small-screen > .logo").removeClass("display-none");
+
+      $(".navigation--light").css("display", "none");
+      $(".navigation--dark").css("display", "block");
     }
   }
 });
