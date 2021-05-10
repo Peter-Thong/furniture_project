@@ -88,12 +88,23 @@ body {
   font-size: 1.6rem; }
 
 .link-upper {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: all 0.2s; }
+  .link-upper.white-color:hover {
+    background-color: #fff;
+    color: #43283a; }
+  .link-upper.dark-color:hover {
+    background-color: #43283a;
+    color: #fff; }
 
 .link-text__sales {
   font-family: inherit;
   font-size: 1.8rem;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all 0.2s; }
+  .link-text__sales:hover {
+    background-color: #43283a;
+    color: #fff; }
 
 .u-center-text {
   text-align: center !important; }
@@ -576,6 +587,9 @@ hr {
         justify-content: space-around;
         transition: transform 0.5s ease-in;
         transform: translateX(-100%); } }
+    @media (max-width: 56.25em) {
+      .navigation__list {
+        width: 100%; } }
   .navigation__bar {
     color: #fff;
     font-size: 4.5rem; }
